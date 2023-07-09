@@ -1,0 +1,36 @@
+.appContainer {
+    margin-top: 80px;
+}
+
+.myHeader {
+    background-image: linear-gradient(120deg, #f6d365 0%, #ffcab7 100%);
+}
+
+.graphLine {
+    height: 100%;
+    width: 100%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+}
+
+.refreshBtn {
+    font-weight: bold;
+    margin: 30px;
+    font-size: 20px;
+}
+
+/* refresh button text color must be white */
+.refreshBtn:hover {
+    color: white;
+}
+
+
