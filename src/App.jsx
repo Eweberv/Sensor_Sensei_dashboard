@@ -166,7 +166,13 @@ const App = () => {
 
     const refreshData = async () => {
         try {
-            const response = await fetch('https://787mb4n9fa.execute-api.eu-west-1.amazonaws.com/production/data?sensor_id=81018');
+            const response = await fetch(import.meta.env.VITE_API_URL, {
+                headers: {
+                    "x-api-key": import.meta.env.VITE_API_KEY,
+                },
+                method: 'GET',
+                mode: 'cors',
+            });
             const data = await response.json();
 
             const extractData = (type) => {
